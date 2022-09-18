@@ -8,15 +8,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: '小天的doc', // 站点名称
   tagline: '小天的日常记录',  // slogan，标语
-  url: 'https://wengtx.cn',   //  站点的地址
-  baseUrl: '/',// 前置路径
+  url: 'https://xiangge0405.github.io',   //  站点的地址
+  baseUrl: '/xbolgs/',// 前置路径
   onBrokenLinks: 'throw',//  编译遇到死链怎么处理
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',// 网站的图标
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'XiangGe0405', // GitHub 上的组织名或者用户名
+  organizationName: 'xiangge0405', // GitHub 上的组织名或者用户名
   projectName: 'xbolgs', // GitHub 上仓库的名称
 
   // Even if you don't use internalization, you can use this field to set useful

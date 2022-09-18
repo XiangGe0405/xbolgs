@@ -26,20 +26,42 @@ const config = {
     defaultLocale: 'zh-Hans',
     locales: ['zh-Hans'],
   },
-
+  themes: [
+    'live-codeblock',
+    // ... Your other themes.
+    [
+      // Docusaurus v2的离线/本地搜索插件/主题，支持多种语言，特别是针对zh语言进行了优化。
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        // ... Your options.
+        // `hashed` is recommended as long-term-cache of index file is possible.
+        hashed: true,
+        // For Docs using Chinese, The `language` is recommended to set to:
+        // ```
+        language: ["en", "zh"],
+        highlightSearchTermsOnTargetPage: true,
+        removeDefaultStemmer: true,
+      },
+    ],
+  ],
   presets: [
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          /* 文档插件配置 */
+          //routeBasePath: '/', // 把文档放在网站根部
+          /* 其他文档插件配置 */
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
           //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
+        //blog: false,
         blog: {
+          /* 博客插件配置 */
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -56,16 +78,33 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // 交互式代码编辑器
+      liveCodeBlock: {
+        playgroundPosition: 'bottom',
+      },
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: true,
+        },
+      },
+      // 色彩模式
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
+      },
       navbar: {
         title: '小天的doc',// 导航上站点名称
         logo: {
           alt: '小天的doc Logo',//  站点 logo 文字替换
           src: 'img/logo.svg',//   站点 logo  链接
         },
+        hideOnScroll: true,
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'docusaurus/intro',
             position: 'left',
             label: '文档',
           },
@@ -76,12 +115,58 @@ const config = {
           },
           {
             href: 'https://github.com/XiangGe0405/xbolgs',
-            label: 'GitHub',
+            // label: 'GitHub',
             position: 'right',
+            className: 'header-github-link',
+            'aria-label': 'GitHub repository',
+          },
+          {
+            type: 'dropdown',
+            position: 'right',
+            label: '快速访问🎈',
+            items: [
+              {
+                label: 'LeetCode',
+                href: 'https://leetcode.cn/',
+              }, 
+              {
+                label: 'Vue.js',
+                href: 'https://cn.vuejs.org/v2/guide/',
+              }, 
+              {
+                label: 'Can I Use',
+                href: 'https://www.caniuse.com/#home',
+              },
+              {
+                label: 'Java SE API Documentation',
+                href: 'https://docs.oracle.com/javase/8/docs/api/index.html',
+              }, 
+              {
+                label: 'Program Creek',
+                href: 'https://www.programcreek.com/',
+              }, 
+              {
+                label: 'Spring',
+                href: 'https://spring.io/',
+              }, 
+              {
+                label: 'Stackoverflow',
+                href: 'https://stackoverflow.com/',
+              }, 
+              {
+                label: 'Linux命令大全',
+                href: 'https://www.linuxcool.com/',
+              },
+            ]
           },
         ],
       },
-      footer: {
+      //footer: {
+        // logo: {
+        //   alt: 'Meta 开源图标',
+        //   src: '/img/meta_oss_logo.png',
+        //   href: 'https://opensource.facebook.com/',
+        // },
         // style: 'dark',
         // links: [
         //   {
@@ -124,8 +209,8 @@ const config = {
         //     ],
         //   },
         // ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      },
+        //copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      //},
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,

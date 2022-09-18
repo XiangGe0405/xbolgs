@@ -1,41 +1,50 @@
 # Website
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+本项目基于[Docusaurus 2](https://docusaurus.io/)
 
-### Installation
+## 初始化
 
-```
-$ yarn
-```
-
-### Local Development
-
-```
-$ yarn start
+```bash
+yarn
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+### 本地开发
 
-### Build
-
-```
-$ yarn build
+```bash
+yarn start
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+默认启动站点(<http://localhost:3000/>)
 
-### Deployment
+## 编译
 
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
+```bash
+yarn build
 ```
 
-Not using SSH:
+### 结构目录
+
+```text
+.
+├── README.md
+├── babel.config.js
+├── blog                             // 博客文章目录
+│   ├── 2019-05-28-hola.md
+│   ├── 2019-05-29-hello-world.md
+│   └── 2019-05-30-welcome.md
+├── docs                             // 文档目录
+│   ├── doc1.md
+│   ├── doc1.md
+│   ├── doc3.md
+│   └── mdx.md                       // 支持 mdx 哦
+├── docusaurus.config.js             // 配置文件目录
+├── node_modules
+├── package.json
+├── sidebars.js      // 文档侧边栏配置文件
+├── src              // 页面或自定义的 React 组件目录
+│   ├── css
+│   └── pages
+├── static                           // 静态文件目录
+└── yarn.lock
 
 ```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

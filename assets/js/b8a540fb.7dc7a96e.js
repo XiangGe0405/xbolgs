@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkxbolgs=self.webpackChunkxbolgs||[]).push([[2296],{6714:l=>{l.exports=JSON.parse('{"permalink":"/xbolgs/blog/tags/hola","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

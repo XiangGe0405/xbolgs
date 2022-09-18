@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkxbolgs=self.webpackChunkxbolgs||[]).push([[5413],{5868:l=>{l.exports=JSON.parse('{"label":"hola","permalink":"/xbolgs/blog/tags/hola","allTagsPath":"/xbolgs/blog/tags","count":1}')}}]);

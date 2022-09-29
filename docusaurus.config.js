@@ -157,6 +157,10 @@ const config = {
                 label: 'Linux命令大全',
                 href: 'https://www.linuxcool.com/',
               },
+              {
+                label: 'Jenkins中文',
+                href: 'https://www.jenkins.io/zh/',
+              }
             ]
           },
         ],

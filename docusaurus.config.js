@@ -51,7 +51,7 @@ const config = {
       ({
         docs: {
           /* 文档插件配置 */
-          //routeBasePath: '/', // 把文档放在网站根部
+          // routeBasePath: '/', // 把文档放在网站根部
           /* 其他文档插件配置 */
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.

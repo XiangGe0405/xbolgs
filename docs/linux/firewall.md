@@ -111,24 +111,37 @@ firewall-cmd --add-forward-port=proto=80:proto=tcp:toaddr=192.168.0.1:toport=808
 
 ## 二、centos7以下版本
 
-``` bash
 1.开放80，22，8080 端口
+
+``` bash
 /sbin/iptables -I INPUT -p tcp --dport 80 -j ACCEPT
 /sbin/iptables -I INPUT -p tcp --dport 22 -j ACCEPT
 /sbin/iptables -I INPUT -p tcp --dport 8080 -j ACCEPT
+```
 
 2.保存
+
+``` bash
 /etc/rc.d/init.d/iptables save
+```
 
 3.查看打开的端口
-/etc/init.d/iptables status
 
-4.关闭防火墙 
+``` bash
+/etc/init.d/iptables status
+```
+
+4.关闭防火墙
+
+``` bash
 1） 永久性生效，重启后不会复原
 开启： chkconfig iptables on
 关闭： chkconfig iptables off
+```
 
 2） 即时生效，重启后复原
+
+``` bash
 开启： service iptables start
 关闭： service iptables stop
 ```

@@ -160,6 +160,14 @@ const config = {
               {
                 label: 'Jenkins中文',
                 href: 'https://www.jenkins.io/zh/',
+              },
+              {
+                label: 'markdown官方教程',
+                href: 'https://markdown.com.cn/intro.html'
+              },
+              {
+                label: 'Docker—从入门到实践',
+                href: 'https://vuepress.mirror.docker-practice.com/'
               }
             ]
           },

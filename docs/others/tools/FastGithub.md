@@ -1,19 +1,24 @@
-FastGithub
+---
+sidebar_position: 1
+---
+
+# FastGithub
+
 github加速神器，解决github打不开、用户头像无法加载、releases无法上传下载、git-clone、git-pull、git-push失败等问题。
 
-#### 1 程序下载
+## 1 程序下载
 
 <https://github.com/dotnetcore/FastGithub>
 
-#### 2 部署方式
+## 2 部署方式
 
-##### 2.1 windows-x64桌面
+### 2.1 windows-x64桌面
 
 ```
 双击运行FastGithub.UI.exe
 ```
 
-##### 2.2 windows-x64服务
+#### 2.2 windows-x64服务
 
 ``` bash
 fastgithub.exe start // 以windows服务安装并启动

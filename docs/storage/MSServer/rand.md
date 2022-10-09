@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# SQL SERVER格式化字符串位数，不足补零
+# SQL SERVER 获取随机数
 
 ```text
 比较 CEILING 和 FLOOR
@@ -18,13 +18,13 @@ SELECT RAND()
 0.8342308279445682
 ```
 
-随机0-99之间的整数(mysql没成功,ODPS成功)
+随机0-99之间的整数
 
 ```sql
 SELECT CAST(FLOOR(RAND() * 100 ) AS INT )
 ```
 
-随机1-100之间的整数(mysql没成功)
+随机1-100之间的整数
 
 ```sql
 select cast(ceiling(rand() * 100) as int)

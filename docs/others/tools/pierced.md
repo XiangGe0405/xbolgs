@@ -24,9 +24,9 @@ sidebar_position: 1
 案例二：企业通讯录同步过程中需要注册一个公网域名(或IP)的回调地址，用来接收钉钉上的企业通讯录信息变更。
 内网穿透工具可以实现将一个公网域名映射到本地的localhost域名。
 
-### 启动内网穿透
+## 启动内网穿透
 
-#### 1.下载工具
+### 1.下载工具
 
 ``` bash
 git clone https://github.com/open-dingtalk/pierced.git
@@ -38,7 +38,7 @@ git clone https://github.com/open-dingtalk/pierced.git
 https://gitee.com/wengtianxiang/pierced.git
 ```
 
-#### 2.执行以下命令，启动工具
+### 2.执行以下命令，启动工具
 
 Windows执行以下命令：
 说明 Windows需使用cmd工具打开命令行。
@@ -69,7 +69,7 @@ chmod 777 ./ding
 
 启动完客户端后，你访问<http://abcde.vaiwan.com/xxxxx>都会映射到 <http://127.0.0.1:8080/xxxxx>。
 
-##### 注意
+#### 注意
 
 需要访问的域名是<http://abcde.vaiwan.com/xxxxx> 而不是<http://abcde.vaiwan.com:8080/xxxxx>
 启动命令的subdomain参数有可能被别人占用，尽量不要用常用字符，可以用自己公司名的拼音，例如：alibaba、dingding等。

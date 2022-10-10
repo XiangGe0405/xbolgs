@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+authors: [wengtx]
+tags: [mssql, SQL Server,RAND()]
 ---
 
 # 获取随机数

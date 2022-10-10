@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# SQL SERVER格式化字符串位数，不足补零
+# 格式化字符串位数，不足补零
 
 本文举例在SQLSERVER中将1格式化为001的方法：
 

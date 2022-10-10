@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# SQLServer查询执行过的SQL记录
+# 查询执行过的SQL记录
 
 说明：仅支持sql server2008及以上版本
 

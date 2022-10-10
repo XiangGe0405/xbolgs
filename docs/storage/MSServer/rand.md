@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# SQL SERVER 获取随机数
+# 获取随机数
 
 ```text
 比较 CEILING 和 FLOOR

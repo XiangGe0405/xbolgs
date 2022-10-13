@@ -15,7 +15,7 @@ Jenkins中文官网：(<https://www.jenkins.io/zh/>)
 
 ``` bash
 docker run -d --name jenkins -p 8081:8080 -v /data/jenkins_home:/var/jenkins_home jenkins/jenkins:lts;
-``` 
+```
 
 备注：
     -d //启动在后台

@@ -53,7 +53,7 @@ Windows 上的 Docker 的主机卷映射当前不支持映射完整的 /var/opt/
 
 1. --memory 2000M：sqlserver 的容器运行时，内存要>=2000MB,因此，要指定 容器运行时内存。否则容器已启动就推出，且不会有任何异常信息。
 
-当容器不能启动，或者启动就退出时，可以 用命令 `docker logs <container>` 查看日志，根据日志信息解决问题（\<container> 为需要操作的 容器ID或者 name，后面不再说明）。
+当容器不能启动，或者启动就退出时，可以 用命令 `docker logs <container>` 查看日志，根据日志信息解决问题（\<container\> 为需要操作的 容器ID或者 name，后面不再说明）。
 
 数据库链接：
 

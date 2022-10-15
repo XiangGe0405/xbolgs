@@ -15,14 +15,14 @@ Jenkins中文官网：(<https://www.jenkins.io/zh/>)
 
 ``` bash
 docker run -d --name jenkins -p 8081:8080 -v /data/jenkins_home:/var/jenkins_home jenkins/jenkins:lts;
-``` 
+```
 
 备注：
     -d //启动在后台
     --name //容器名字
     -p //端口映射（8081：宿主主机端口，8080：容器内部端口）
     -v //数据卷挂载映射（/data/jenkins_home：宿主主机目录，另外一个即是容器目录）
-    enkins/jenkins:lts //Jenkins镜像（最新版）
+    Jenkins/jenkins:lts //Jenkins镜像（最新版）
 
 ### win
 

@@ -13,7 +13,7 @@ docker pull nginx
 
 ``` bash
 docker run -d -p 80:80  \
-              -p 443:443  \
+ -p 443:443  \
  --name nginxweb \
  --link answer-server:answerserver \
  -v /usr/local/docker/nginx/html:/usr/share/nginx/html \

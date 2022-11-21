@@ -1,3 +1,12 @@
+---
+# sidebar_position: 4
+authors: [wengtx]
+tags: [mssql, SQL Server,巡检,巡检模版]
+---
+
+# SQL server 数据库巡检模版(二)
+
+``` sql
 SELECT name FROM sysobjects where xtype='u' and name <>'XzryGzGrant' AND name LIKE 'XzryGzGrant2021%'
 SELECT name FROM sys.tables WHERE TYPE='U' AND PATINDEX('%[^0-9][0-9]%',name)>0 ORDER BY name
 --备份表
@@ -187,3 +196,5 @@ dbo.systypes b ON a.xtype = b.xusertype INNER JOIN dbo.sysobjects d ON a.id = d.
 d.status >= 0 LEFT OUTER JOIN   dbo.syscomments e ON a.cdefault = e.id LEFT OUTER JOIN sys.extended_properties g 
 ON a.id = g.major_id AND a.colid = g.minor_id AND  g.name = 'MS_Description' LEFT OUTER JOIN  
 sys.extended_properties f ON d.id = f.major_id AND f.minor_id = 0 AND f.name = 'MS_Description'
+
+```

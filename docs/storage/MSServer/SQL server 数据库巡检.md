@@ -1,3 +1,10 @@
+---
+# sidebar_position: 4
+authors: [wengtx]
+tags: [mssql, SQL Server,巡检,巡检模版]
+---
+
+# SQL server 数据库巡检模版(一)
 
 ``` sql
 

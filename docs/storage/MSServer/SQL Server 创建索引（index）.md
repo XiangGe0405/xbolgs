@@ -69,7 +69,7 @@ OFF 或 fillfactor 未指定，考虑到中间级页上的键集，将中间级�
 PAD_INDEX 选项只有在指定了 FILLFACTOR 时才有用，因为 PAD_INDEX 使用由 FILLFACTOR 指定的百分比。
 FILLFACTOR = fillfactor：用于指定在创建索引时，每个索引页的数据占索引页大小的百分比，fillfactor 的值为1到100。
 SORT_IN_TEMPDB = {ON |OFF }：用于指定创建索引时的中间排序结果将存储在 tempdb 数据库中。 默认为 OFF。
-ON 用于生成索引的中间排序结果存储在tempdb。 这可能会降低仅当创建索引所需的时间tempdb位于不同的与用户数据库的磁盘集。 
+ON 用于生成索引的中间排序结果存储在tempdb。 这可能会降低仅当创建索引所需的时间tempdb位于不同的与用户数据库的磁盘集。
 OFF 中间排序结果与索引存储在同一数据库中。
 IGNORE_DUP_KEY = {ON |OFF }：指定在插入操作尝试向唯一索引插入重复键值时的错误响应。默认为 OFF。
 ON 向唯一索引插入重复键值时将出现警告消息。 只有违反唯一性约束的行才会失败。

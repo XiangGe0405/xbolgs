@@ -291,5 +291,4 @@ exec msdb.dbo.sp_start_job @job_name =N'job_update_sql';
 
 12、备份数据库(完整、差异、日志备份)，这个在其他文章中已有详细描述，这里不再赘述。
 
-
-原文链接：https://blog.csdn.net/sqlserverdiscovery/article/details/20618579
+原文链接：<https://blog.csdn.net/sqlserverdiscovery/article/details/20618579>

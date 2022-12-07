@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkxbolgs=self.webpackChunkxbolgs||[]).push([[2331],{2381:s=>{s.exports=JSON.parse('{"label":"docusaurus","permalink":"/xbolgs/blog/tags/docusaurus","allTagsPath":"/xbolgs/blog/tags","count":4}')}}]);
